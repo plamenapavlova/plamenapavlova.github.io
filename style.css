@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('backgroundPhoto.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh; 
+}
+
+
+h1 {
+    text-align: center;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    margin-top: 20%;
+}
+
+.rectangle{
+    background-color: white; 
+    width: 30%; 
+    padding: 20px;
+    margin: 0 auto; 
+    text-align: center; 
+    border-radius: 10px; 
+    z-index: 1;
+}

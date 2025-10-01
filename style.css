@@ -4,49 +4,92 @@ body {
     padding: 0;
     flex-direction: column; 
     justify-content: center;
-}
-
-body {
+    display: flex;
+    align-items: center;     
     background-image: url('background2.jpg'); 
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center;
     font-family: Arial, sans-serif; 
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
     height: 100vh; 
 }
 
+header {
+    width: 100%;
+    background-color: #000; 
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
 
 h1 {
     text-align: center;
     color: black;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5em;
-    
+    margin: 0;
 }
 
-.rectangle{
-    background-color: white; 
+.rectangle {
+    background-color: rgba(255, 255, 255, 0.95);
     width: 30%; 
-    max-height:300px;
+    max-height: 300px;
     padding: 30px;
-    margin: 20px auto; 
+    margin: 100px auto 20px auto; 
     text-align: center; 
     border-radius: 10px; 
     z-index: 1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
 }
 
-.rectangle2{
-    background-color: white; 
+.rectangle:hover {
+    transform: translateY(-5px);
+}
+
+.rectangle2 {
+    background-color: rgba(255, 255, 255, 0.95);
     width: 40%; 
-    max-height:100px;
-    padding: 10px;
-    margin: 50px auto 10px auto;
+    max-height: 300px;
+    padding: 20px;
+    margin: 20px auto;
     text-align: center; 
     border-radius: 10px; 
     z-index: 1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.rectangle2:hover {
+    transform: translateY(-5px);
+}
+
+a.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: #007bff;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+a.button:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 800px) {
+    .rectangle {
+        width: 80%;
+    }
+    .rectangle2 {
+        width: 80%;
+    }
 }
